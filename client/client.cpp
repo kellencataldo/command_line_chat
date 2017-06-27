@@ -99,7 +99,7 @@ void connecter(int *sockFD){
   memset(&serverAddr, 0, sizeof(serverAddr));  
   serverAddr.sin_family = AF_INET;
   serverAddr.sin_port = htons(6000);
-  serverAddr.sin_addr.s_addr = inet_addr("54.68.61.201");
+  serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
   memset(serverAddr.sin_zero, '\0', sizeof serverAddr.sin_zero);
   
